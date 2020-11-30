@@ -41,7 +41,7 @@ div.block{
   margin: -125px 0 0 -125px;
   background: rgba(255, 255, 255, 0.45);
 }
-video.avatar {
+img.avatar {
   width: 100px;
   height: 100px;
   border-radius: 50%;
