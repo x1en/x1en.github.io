@@ -143,6 +143,7 @@ img.avatar {
     -moz-transform: translate(50px,17px); /** Firefox **/
     text-align: center;
 }
+
 .github a:hover {
   transition: 1s;
   background: #191919; color: rgba(205, 214, 219, 1);
@@ -158,7 +159,13 @@ img.avatar {
   border-right: 0.08em solid black
 
 }
-
+.github a{
+    transform: translate(70px,17px);
+    -webkit-transform: translate(70px,17px); /** Chrome & Safari **/
+    -o-transform: translate(70px,17px); /** Opera **/
+    -moz-transform: translate(70px,17px); /** Firefox **/
+    text-align: center;
+}
 @keyframes gradient {
   0% {
     background-position: 0% 50%;
