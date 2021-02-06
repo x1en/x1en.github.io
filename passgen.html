@@ -10,7 +10,23 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- подключаем функцию, которая хеширует строку -->
-  <script src="http://thecode.local/wp-content/uploads/2019/05/js-md5.js"></script>
+  <script // задаём переменные, где будем хранить адрес сайта, кодовое слово…
+var site, salt;
+// …исходные текстовые данные для пароля и сам пароль
+var text, password;
+// объявляем функцию, которая создаёт пароль и выводит его на экран
+function generate() {
+  // кладём в соответствующие переменные текстовое значение адреса сайта…
+  site = document.getElementById('site_url').value;
+  // …и кодового слова
+  salt = document.getElementById('keyword').value;
+  // подготавливаем исходную строку для пароля и добавляем в неё наш секретный ингредиент
+  text = site + salt + 'Misha Polyanin Molodets';
+  // на основе этой строки с помощью функции md5, которую мы подключили в самом начале, создаём пароль
+  password = md5(text);
+  // выводим его на экран
+  document.getElementById('pass_text').innerHTML = password;
+}></script>
   <!-- задаём CSS-стили прямо здесь же, чтобы всё было в одном файле -->
   <style type="text/css">
     /*задаём общие параметры для всей страницы: шрифт и отступы*/    body {
