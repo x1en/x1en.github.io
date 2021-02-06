@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<!-- служебная часть -->
+
+<head>
+  <!-- заголовок страницы -->
+  <title>Генератор паролей</title>
+  <!-- настраиваем служебную информацию для браузеров -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- подключаем функцию, которая хеширует строку -->
+  <script src="http://thecode.local/wp-content/uploads/2019/05/js-md5.js"></script>
+  <!-- задаём CSS-стили прямо здесь же, чтобы всё было в одном файле -->
+  <style type="text/css">
+    /*задаём общие параметры для всей страницы: шрифт и отступы*/    body {
+      text-align: center;
+      margin: 10;
+      font-family: Verdana, Arial, sans-serif;
+      font-size: 16px;
+    }
+
+    /* настраиваем внешний вид полей ввода*/    input {
+      display: inline-block;
+      margin: 20px auto;
+      border: 2px solid #eee;
+      padding: 10px 20px;
+      font-family: Verdana, Arial, sans-serif;
+      font-size: 16px;
+    }
+
+    /*закончили со стилями*/  </style>
+  <!-- закрываем служебную часть страницы -->
+</head>
+
+<body>
+  <!-- началась визуальная часть -->
+  <!-- ставим всё содержимое в один блок по центру  -->
+  <div class="container" margin: auto;">
+    <!-- заголовок страницы -->
+    <h2 class="todo__caption">Генератор паролей</h2>
+    <!--делаем отступ -->
+    <br>
+    <!-- задаём поле ввода для адреса нужного сайта и настраиваем параметры поля -->
+    <input type="text" id="site_url" size="50" placeholder="Вставьте адрес сайта, где вам нужен пароль">
+    <!--делаем отступ -->
+    <br>
+    <!-- задаём поле ввода для кодового слова и настраиваем параметры поля -->
+    <input type="text" id="keyword" size="50" placeholder="Напишите кодовое слово, чтобы сделать пароль сильнее">
+    <!--делаем двойной отступ -->
+    <br>
+    <br>
+    <!-- вставляем кнопку, которая запускает генератор пароля и настраиваем отступы -->
+    <button style="font-size: 100%; padding:5px 10px 10px 10px" >
